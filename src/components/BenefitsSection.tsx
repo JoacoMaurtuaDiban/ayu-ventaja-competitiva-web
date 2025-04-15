@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect, useState } from 'react';
 import { TrendingUp, UserCheck, Clock, Trophy } from 'lucide-react';
 
@@ -50,7 +51,7 @@ const BenefitsSection = () => {
     };
   }, []);
 
-return (
+  return (
     <section id="beneficios" ref={sectionRef} className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
