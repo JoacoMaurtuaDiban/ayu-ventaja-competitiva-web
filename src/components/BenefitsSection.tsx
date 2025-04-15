@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { TrendingUp, UserCheck, Clock, Trophy } from 'lucide-react';
 
@@ -51,7 +50,7 @@ const BenefitsSection = () => {
     };
   }, []);
 
-  return (
+return (
     <section id="beneficios" ref={sectionRef} className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -63,12 +62,12 @@ const BenefitsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
               className={`bento-card opacity-0 ${
-                isVisible ? `animate-fade-in-delay-${index % 3}` : ''
+                isVisible ? `animate-fade-in-delay-${index % 4}` : ''
               }`}
             >
               <div className="mb-4 bg-ayu-pink bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center">

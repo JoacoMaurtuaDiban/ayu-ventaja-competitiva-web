@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { ClipboardCheck, Coins, Home } from 'lucide-react';
 
@@ -6,7 +5,7 @@ const steps = [
   {
     icon: <ClipboardCheck className="h-12 w-12 text-ayu-pink" />,
     title: 'Define',
-    description: 'Tu empresa selecciona el plan que mejor se adapte a sus objetivos y presupuesto'
+    description: 'Define el plan AYU de tu proyecto, elige la cuota mensual que se adecue mejor a tu bolsillo y el plazo de tiempo en el que deseas conseguirlo.'
   },
   {
     icon: <Coins className="h-12 w-12 text-ayu-yellow" />,

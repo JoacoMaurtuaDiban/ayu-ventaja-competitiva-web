@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Check } from 'lucide-react';
 
@@ -12,45 +11,39 @@ const collaboratorBenefits = [
 const plans = [
   {
     name: 'BÁSICO',
-    description: 'Ideal para empresas que buscan iniciar su programa de beneficios de construcción',
+    description: 'Beneficios del programa AYU',
     features: [
-      'Ahorro mensual desde S/50',
-      'Acceso a catálogo AYU',
-      'Asesoría técnica básica'
+      'Sorteo mensual de materiales de construcción valorizado en S/ 300 entre pagadores',
+      'Capacitación virtual trimestral personalizada para colaboradores',
+      'Recomendaciones de MO capacitados por CPSAA'
     ]
   },
   {
     name: 'INTERMEDIO',
-    description: 'Solución completa para necesidades de construcción y mejora del hogar',
+    description: 'Beneficios del programa AYU',
     features: [
-      'Ahorro mensual desde S/100',
-      'Catálogo ampliado',
-      'Asesoría técnica personalizada',
-      'Talleres de construcción'
+      'Sorteo mensual de materiales de construcción valorizado en S/ 500 entre pagadores',
+      'Capacitación presencial trimestral personalizada para colaboradores',
+      'Recomendaciones de MO capacitados por CPSAA',
+      '1 visita técnica presencial personalizada adicional'
     ],
     highlight: true
   },
   {
     name: 'AVANZADO',
-    description: 'Para empresas que buscan un impacto significativo en la calidad de vida',
+    description: 'Beneficios del programa AYU',
     features: [
-      'Ahorro mensual desde S/200',
-      'Acceso a catálogo premium',
-      'Asesoría técnica avanzada',
-      'Talleres y eventos exclusivos',
-      'Reportes de impacto'
+      'Sorteo mensual de materiales de construcción valorizado en S/ 500 entre pagadores',
+      'Capacitación presencial trimestral personalizada para colaboradores',
+      'Recomendaciones de MO capacitados por CPSAA',
+      '1 visita técnica presencial personalizada adicional',
+      'Ejecutivo de cuenta dedicado'
     ]
   },
   {
     name: 'EMPRESARIAL',
-    description: 'Solución a medida para grandes corporaciones con necesidades específicas',
-    features: [
-      'Plan personalizado',
-      'Integración con plataformas de RRHH',
-      'Dashboard de seguimiento',
-      'Eventos corporativos',
-      'Branding compartido'
-    ]
+    description: 'Hecho a medida, cocreamos el plan para tu empresa',
+    features: []
   }
 ];
 
@@ -116,23 +109,21 @@ const PlansSection = () => {
                 ))}
               </div>
               
-              <div className="pt-6 border-t border-gray-200">
-                <h4 className="font-semibold mb-3">Beneficios para el colaborador:</h4>
-                <ul className="space-y-2">
-                  {collaboratorBenefits.map((benefit, i) => (
-                    <li key={i} className="flex items-start">
-                      <div className="flex-shrink-0 mt-1">
-                        <Check className="h-4 w-4 text-ayu-yellow" />
-                      </div>
-                      <p className="ml-2 text-sm text-gray-600">{benefit}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <button className="ayu-btn-secondary mt-6">Solicitar más info de este plan</button>
+              <button className="ayu-btn-secondary mt-6">Solicitar más info</button>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-center mb-8">Lista de beneficios para el ayudado</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {collaboratorBenefits.map((benefit, index) => (
+              <div key={index} className="bento-card text-center">
+                <Check className="h-6 w-6 text-ayu-yellow mx-auto mb-3" />
+                <p className="text-gray-700">{benefit}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
