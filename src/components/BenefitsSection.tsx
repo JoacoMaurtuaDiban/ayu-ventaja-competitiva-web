@@ -74,8 +74,8 @@ const BenefitsSection = () => {
               <div className="mb-4 bg-ayu-pink bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center">
                 {benefit.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-              <p className="text-gray-600">{benefit.description}</p>
+              <h3 className="text-xl font-semibold mb-2 text-center">{benefit.title}</h3>
+              <p className="text-gray-600 text-center">{benefit.description}</p>
             </div>
           ))}
         </div>
