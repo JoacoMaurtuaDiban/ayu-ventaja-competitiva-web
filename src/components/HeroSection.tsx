@@ -43,18 +43,18 @@ const HeroSection = () => {
 
         {/* RIGHT: HERO IMAGE */}
         <div
-          className="relative w-full lg:w-1/2 h-64 md:h-96 lg:h-[34rem] flex items-center justify-center lg:justify-end order-1 lg:order-2 mb-10 lg:mb-0 lg:pr-0"
+          className="relative w-full lg:w-1/2 h-64 md:h-96 lg:h-[34rem] flex items-center justify-end order-1 lg:order-2 mb-10 lg:mb-0 lg:absolute lg:right-4 xl:right-8"
           aria-hidden="true"
         >
           <img
-            src="/lovable-uploads/155356b5-1d70-4e83-90ef-14a45e31c0f9.png"
-            alt=""
+            src="/lovable-uploads/4736a1cb-4cca-40d1-9a7b-372f1e54b732.png"
+            alt="AYU Team"
             className="
-              absolute inset-0 w-full h-full object-cover
-              lg:static lg:w-full lg:h-full
+              w-full max-w-[600px] h-auto object-cover
               rounded-3xl
               shadow-2xl
               border-4 border-white
+              lg:absolute lg:right-0
             "
             style={{
               objectPosition: 'right center',
