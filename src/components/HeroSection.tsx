@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 const HeroSection = () => {
@@ -43,21 +42,20 @@ const HeroSection = () => {
 
         {/* RIGHT: HERO IMAGE */}
         <div
-          className="relative w-full lg:w-1/2 h-64 md:h-96 lg:h-[34rem] flex items-center justify-end order-1 lg:order-2 mb-10 lg:mb-0 lg:absolute lg:right-4 xl:right-8"
+          className="relative w-full lg:w-1/2 h-72 md:h-[450px] lg:h-[600px] xl:h-[700px] flex items-center justify-end order-1 lg:order-2 mb-10 lg:mb-0"
           aria-hidden="true"
         >
           <img
-            src="/lovable-uploads/4736a1cb-4cca-40d1-9a7b-372f1e54b732.png"
-            alt="AYU Team"
+            src="/lovable-uploads/ee2dbd26-1eca-4478-9d3a-96eb8328309a.png"
+            alt="AYU Team colaboradores"
             className="
-              w-full max-w-[600px] h-auto object-cover
+              w-full h-full object-cover
               rounded-3xl
               shadow-2xl
               border-4 border-white
-              lg:absolute lg:right-0
             "
             style={{
-              objectPosition: 'right center',
+              objectPosition: 'center center',
             }}
             draggable={false}
             loading="eager"
