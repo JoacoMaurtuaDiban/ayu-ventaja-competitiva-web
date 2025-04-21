@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 const HeroSection = () => {
@@ -48,19 +47,17 @@ const HeroSection = () => {
           aria-hidden="true"
         >
           <img
-            src="/lovable-uploads/8f2cbf83-91b5-41a1-a1da-0d890d134989.png"
+            src="/lovable-uploads/155356b5-1d70-4e83-90ef-14a45e31c0f9.png"
             alt=""
             className="
               absolute inset-0 w-full h-full object-cover
-              lg:static lg:w-[115%] lg:h-full
+              lg:static lg:w-full lg:h-full
               rounded-3xl
               shadow-2xl
               border-4 border-white
-              lg:ml-auto
             "
             style={{
               objectPosition: 'right center',
-              maxWidth: 'none',
             }}
             draggable={false}
             loading="eager"
@@ -95,4 +92,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
