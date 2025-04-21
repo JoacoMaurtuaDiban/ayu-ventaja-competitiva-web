@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 
 const HeroSection = () => {
@@ -42,7 +43,7 @@ const HeroSection = () => {
 
         {/* RIGHT: HERO IMAGE */}
         <div
-          className="relative w-full lg:w-1/2 h-72 md:h-[450px] lg:h-[600px] xl:h-[700px] flex items-center justify-end order-1 lg:order-2 mb-10 lg:mb-0"
+          className="relative w-full lg:w-1/2 h-72 md:h-[450px] lg:h-[550px] xl:h-[600px] flex items-center justify-end order-1 lg:order-2 mb-10 lg:mb-0"
           aria-hidden="true"
         >
           <img
