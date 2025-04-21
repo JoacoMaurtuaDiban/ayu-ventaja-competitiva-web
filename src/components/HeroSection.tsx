@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 
 const HeroSection = () => {
@@ -15,7 +16,6 @@ const HeroSection = () => {
       className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-gray-50 overflow-hidden"
       aria-label="AYU Hero Section"
     >
-      {/* TWO COLUMN SPLIT ON DESKTOP, COLUMN REVERSE ON MOBILE */}
       <div className="relative flex flex-col-reverse lg:flex-row w-full h-full items-center container mx-auto px-4 md:px-8 py-16 md:py-24 lg:py-32 z-10">
         {/* TEXT CONTENT */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-start lg:items-start text-left z-20 max-w-xl mx-auto lg:mx-0 order-2 lg:order-1 md:mb-12 lg:mb-0">
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
         {/* RIGHT: HERO IMAGE */}
         <div
-          className="relative w-full lg:w-1/2 h-64 md:h-96 lg:h-[34rem] flex items-center justify-center lg:justify-end order-1 lg:order-2 mb-10 lg:mb-0"
+          className="relative w-full lg:w-1/2 h-64 md:h-96 lg:h-[34rem] flex items-center justify-center lg:justify-end order-1 lg:order-2 mb-10 lg:mb-0 lg:pr-0"
           aria-hidden="true"
         >
           <img
