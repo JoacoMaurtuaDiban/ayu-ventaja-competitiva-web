@@ -40,11 +40,11 @@ const HeroSection = () => {
       className="relative h-screen overflow-hidden bg-gradient-to-br from-white to-gray-50"
       aria-label="AYU Hero Section"
     >
-      {/* Container for consistent layout */}
-      <div className="container relative h-full mx-auto px-4 md:px-8 max-w-screen-2xl z-10 pt-24">
+      {/* Main container with max width and consistent horizontal padding */}
+      <div className="container max-w-screen-2xl mx-auto px-4 md:px-8 h-full relative z-10 pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 h-full gap-8 pb-16">
           
-          {/* Left Content Area */}
+          {/* Left Content Area - Aligned with container padding */}
           <div className="lg:col-span-5 flex flex-col justify-center z-20">
             <h1 
               className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 opacity-0 ${
@@ -73,7 +73,7 @@ const HeroSection = () => {
             </Button>
           </div>
           
-          {/* Right Image Collage */}
+          {/* Right Image Collage - Non-overlapping images with proper spacing */}
           <div className="lg:col-span-7 relative h-full flex items-center">
             <div 
               className={`relative w-full h-[65vh] md:h-[75vh] lg:h-full opacity-0 ${
@@ -93,7 +93,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
               
-              {/* Second image - smaller, positioned to left bottom */}
+              {/* Second image - smaller, positioned to left bottom with better spacing */}
               <div 
                 className="absolute w-[50%] h-[45%] bottom-[10%] left-[2%] rounded-2xl overflow-hidden shadow-lg border-4 border-white z-20 transform transition-transform duration-1000"
                 style={{ transform: `translateY(${scrollY * 0.3}px)` }}
@@ -106,9 +106,9 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent"></div>
               </div>
               
-              {/* Third image - medium, positioned to right middle */}
+              {/* Third image - adjusted position to avoid overlap */}
               <div 
-                className="absolute w-[45%] h-[40%] bottom-[25%] right-[15%] rounded-2xl overflow-hidden shadow-lg border-4 border-white z-10 transform transition-transform duration-1000"
+                className="absolute w-[45%] h-[40%] top-[35%] right-[20%] rounded-2xl overflow-hidden shadow-lg border-4 border-white z-10 transform transition-transform duration-1000"
                 style={{ transform: `translateY(${scrollY * 0.15}px)` }}
               >
                 <img
