@@ -1,5 +1,4 @@
-
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import BenefitsSection from '../components/BenefitsSection';
@@ -10,25 +9,6 @@ import ContactCTA from '../components/ContactCTA';
 import Footer from '../components/Footer';
 
 const Index = () => {
-  // Parallax scroll effect for the hero section
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const heroSection = document.getElementById('hero');
-      
-      if (heroSection) {
-        // Apply a subtle parallax effect
-        const heroImages = heroSection.querySelectorAll('img');
-        heroImages.forEach(img => {
-          img.style.transform = `translateY(${scrollY * 0.2}px)`;
-        });
-      }
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <div className="min-h-screen">
       <Navbar />
