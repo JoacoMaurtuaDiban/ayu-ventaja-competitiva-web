@@ -18,9 +18,9 @@ const HeroSection = () => {
   };
 
   const backgroundImages = [
-    '/lovable-uploads/8aea6c50-31c9-46db-b278-9b6a61b2d5d8.png',
-    '/lovable-uploads/5aad6445-7b5a-41ea-8840-70eac76c1bb9.png',
-    '/lovable-uploads/4fe100d8-2452-4617-8b7b-084869de04b4.png'
+    '/lovable-uploads/ba0d7ced-32fd-4f26-ac19-c8e5ad1f0fa8.png',
+    '/lovable-uploads/125b4bd6-2f91-41e7-88d3-7bb77b1fcfa8.png',
+    '/lovable-uploads/e0d06297-49bb-41c1-913a-d88e73a31156.png'
   ];
 
   return (

@@ -11,12 +11,18 @@ const BackgroundSlider = ({ images, interval = 4000, children }: BackgroundSlide
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
+    // Preload images for smoother transitions
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
     const timer = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, interval);
 
     return () => clearInterval(timer);
-  }, [images.length, interval]);
+  }, [images, interval]);
 
   return (
     <div className="relative w-full h-full overflow-hidden">
@@ -27,6 +33,7 @@ const BackgroundSlider = ({ images, interval = 4000, children }: BackgroundSlide
           className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
             index === currentImageIndex ? 'opacity-100' : 'opacity-0'
           }`}
+          aria-hidden={index !== currentImageIndex}
         >
           <img
             src={image}
