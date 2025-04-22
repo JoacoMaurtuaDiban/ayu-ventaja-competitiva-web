@@ -12,14 +12,13 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-gray-50 overflow-hidden"
+      className="relative min-h-[75vh] md:min-h-screen bg-gradient-to-br from-white to-gray-50 overflow-hidden"
       aria-label="AYU Hero Section"
     >
-      {/* Main layout container with consistent max-width and padding */}
-      <div className="max-w-screen-2xl w-full mx-auto px-4 md:px-8">
-        <div className="relative flex flex-col-reverse lg:flex-row w-full h-full items-center py-16 md:py-24 lg:py-32 z-10">
+      <div className="container mx-auto px-4 md:px-8 max-w-screen-2xl">
+        <div className="relative flex flex-col-reverse lg:flex-row w-full items-center py-16 md:py-24 lg:py-32 z-10">
           {/* TEXT CONTENT */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center items-start lg:items-start text-left z-20 max-w-xl mx-auto lg:mx-0 order-2 lg:order-1 md:mb-12 lg:mb-0">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-start lg:items-start text-left z-20 max-w-xl lg:max-w-none lg:pr-12 order-2 lg:order-1 md:mb-12 lg:mb-0">
             <h1
               className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 opacity-0 ${
                 isVisible ? 'animate-fade-in' : ''
@@ -43,15 +42,15 @@ const HeroSection = () => {
           </div>
 
           {/* RIGHT: HERO IMAGE */}
-          <div
-            className="relative w-full lg:w-1/2 h-72 md:h-[450px] lg:h-[30rem] flex items-center justify-end order-1 lg:order-2 mb-10 lg:mb-0"
+          <div 
+            className="relative w-full lg:w-1/2 h-72 md:h-[450px] lg:h-[30rem] flex items-center justify-center lg:justify-end order-1 lg:order-2 mb-10 lg:mb-0"
             aria-hidden="true"
           >
-            <div className="w-full h-full 2xl:pr-0">
+            <div className="h-full w-full">
               <img
                 src="/lovable-uploads/ee2dbd26-1eca-4478-9d3a-96eb8328309a.png"
                 alt="AYU Team colaboradores"
-                className="w-full h-full max-w-[720px] 2xl:max-w-none object-cover rounded-3xl shadow-2xl border-4 border-white"
+                className="w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white"
                 style={{
                   objectPosition: "right center",
                 }}
@@ -59,6 +58,7 @@ const HeroSection = () => {
                 loading="eager"
               />
             </div>
+
             {/* Overlay gradient for mobile legibility */}
             <div
               className="lg:hidden absolute inset-0 bg-gradient-to-b from-white/85 via-white/30 to-transparent pointer-events-none"
@@ -67,6 +67,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-30 hidden md:block">
         <div className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center">
