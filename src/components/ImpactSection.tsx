@@ -4,22 +4,22 @@ import { Users, CheckSquare, MapPin, Building } from 'lucide-react';
 
 const stats = [
   {
-    icon: <Users className="h-8 w-8 text-ayu-pink" />,
+    icon: <Users className="h-6 w-6 text-ayu-pink" />,
     value: '+190',
     label: 'familias ya construyen su hogar con AYU'
   },
   {
-    icon: <CheckSquare className="h-8 w-8 text-ayu-pink" />,
+    icon: <CheckSquare className="h-6 w-6 text-ayu-pink" />,
     value: '+25',
     label: 'proyectos entregados'
   },
   {
-    icon: <MapPin className="h-8 w-8 text-ayu-pink" />,
+    icon: <MapPin className="h-6 w-6 text-ayu-pink" />,
     value: '3',
     label: 'Ciudades: Trujillo, Piura y Cajamarca'
   },
   {
-    icon: <Building className="h-8 w-8 text-ayu-pink" />,
+    icon: <Building className="h-6 w-6 text-ayu-pink" />,
     value: '',
     label: 'Con el respaldo de Pacasmayo'
   }
@@ -54,7 +54,7 @@ const ImpactSection = () => {
   return (
     <section id="impacto" ref={sectionRef} className="section-padding">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             AYU ya transforma vidas con el respaldo de Pacasmayo
           </h2>
@@ -63,53 +63,34 @@ const ImpactSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className={`opacity-0 ${isVisible ? 'animate-fade-in' : ''}`}>
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <div key={index} className="p-6 bg-white rounded-xl shadow-md">
-                  <div className="flex items-center mb-3">
-                    {stat.icon}
-                  </div>
-                  <div className="text-3xl font-bold text-ayu-pink mb-1">{stat.value}</div>
-                  <div className="text-gray-600">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+        {/* YouTube Video Container */}
+        <div className="w-full mb-16 rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative pb-[56.25%] h-0">
+            <iframe
+              src="https://www.youtube.com/embed/s3DDJC0K6M0"
+              title="AYU Impact Video"
+              className="absolute top-0 left-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
+        </div>
 
-          <div className={`space-y-6 opacity-0 ${isVisible ? 'animate-fade-in-delay-1' : ''}`}>
-            <div className="aspect-video bg-gray-100 rounded-xl overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <h3 className="text-xl font-bold mb-2">Conoce la historia de Víctor</h3>
-                  <div className="bg-ayu-pink text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto cursor-pointer">
-                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
+        {/* Stats Cards */}
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 opacity-0 ${isVisible ? 'animate-fade-in' : ''}`}>
+          {stats.map((stat, index) => (
+            <div 
+              key={index} 
+              className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="flex items-center mb-2">
+                {stat.icon}
               </div>
-              <img 
-                src="/lovable-uploads/079901db-375c-444f-840d-109015a24b77.png" 
-                alt="Historia de Víctor" 
-                className="object-cover w-full h-full opacity-50"
-              />
+              <div className="text-2xl font-bold text-ayu-pink mb-1">{stat.value}</div>
+              <div className="text-sm text-gray-600">{stat.label}</div>
             </div>
-
-            <div className="flex flex-wrap gap-4">
-              <img 
-                src="/lovable-uploads/806734fe-b787-4c1b-bd24-a248ffb8bc95.png" 
-                alt="Impacto AYU" 
-                className="w-full md:w-[calc(50%-8px)] rounded-xl object-cover h-48"
-              />
-              <img 
-                src="/lovable-uploads/2abeb81a-6670-4ae0-9b8d-dff64e424a4a.png" 
-                alt="Impacto AYU" 
-                className="w-full md:w-[calc(50%-8px)] rounded-xl object-cover h-48"
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
