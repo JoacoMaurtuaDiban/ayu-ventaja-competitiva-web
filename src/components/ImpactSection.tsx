@@ -92,7 +92,7 @@ const ImpactSection = () => {
                   <div className="text-2xl font-bold text-ayu-pink mb-1">{stat.value}</div>
                 )}
                 {!stat.value && (
-                  <div className="mb-1 h-8"></div> {/* Empty space holder with consistent height */}
+                  <div className="mb-1 h-8"></div>
                 )}
                 <div className="text-sm text-gray-600 mt-auto">{stat.label}</div>
               </div>
