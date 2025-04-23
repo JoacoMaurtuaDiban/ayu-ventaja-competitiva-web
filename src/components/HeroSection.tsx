@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   const handleCtaClick = () => {
-    window.open('https://lacantera1.typeform.com/to/Y8ZLXiQD', '_blank');
+    window.open('https://lacantera1.typeform.com/to/f3nr4wss', '_blank');
   };
 
   return (

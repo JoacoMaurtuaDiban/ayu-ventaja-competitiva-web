@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 // Remove the collaboratorBenefits array since we won't need it anymore
 const plans = [
@@ -94,6 +95,10 @@ const PlansSection = () => {
     };
   }, []);
 
+  const handleCtaClick = (planName: string) => {
+    window.open('https://lacantera1.typeform.com/to/f3nr4wss', '_blank');
+  };
+
   return (
     <section id="planes" ref={sectionRef} className="section-padding">
       <div className="container mx-auto">
@@ -130,9 +135,12 @@ const PlansSection = () => {
                 ))}
               </div>
               
-              <button className="ayu-btn-secondary mt-6">
+              <Button 
+                className="ayu-btn-secondary mt-6"
+                onClick={() => handleCtaClick(plan.name)}
+              >
                 Solicitar info P. {plan.name}
-              </button>
+              </Button>
             </div>
           ))}
         </div>
