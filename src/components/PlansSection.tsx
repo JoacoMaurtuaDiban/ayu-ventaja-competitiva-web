@@ -1,13 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User } from 'lucide-react';
 
-const collaboratorBenefits = [
-  'Compra progresiva sin deuda',
-  'Orientación técnica',
-  'Almacenamiento gratuito',
-  'Entrega directa a la obra'
-];
-
+// Remove the collaboratorBenefits array since we won't need it anymore
 const plans = [
   {
     name: 'BÁSICO',
@@ -136,21 +130,11 @@ const PlansSection = () => {
                 ))}
               </div>
               
-              <button className="ayu-btn-secondary mt-6">Solicitar más info</button>
+              <button className="ayu-btn-secondary mt-6">
+                Solicitar info P. {plan.name}
+              </button>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Lista de beneficios para el ayudado</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {collaboratorBenefits.map((benefit, index) => (
-              <div key={index} className="bento-card text-center">
-                <Check className="h-6 w-6 text-ayu-yellow mx-auto mb-3" />
-                <p className="text-gray-700">{benefit}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* New Additional Benefits Subsection */}
