@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Users, CheckSquare, MapPin, Building } from 'lucide-react';
 
@@ -20,7 +19,7 @@ const stats = [
   },
   {
     icon: <Building className="h-6 w-6 text-ayu-pink" />,
-    value: '',
+    value: ' ',  // Added a space character instead of empty string to maintain layout
     label: 'Con el respaldo de Pacasmayo'
   }
 ];
