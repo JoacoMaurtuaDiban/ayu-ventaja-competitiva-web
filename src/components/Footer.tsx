@@ -56,19 +56,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Enlaces</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#why" className="text-gray-300 hover:text-white transition-colors">¿Por qué AYU?</a>
+                <a href="#beneficios" className="text-gray-300 hover:text-white transition-colors">¿Por qué AYU?</a>
               </li>
               <li>
-                <a href="#impact" className="text-gray-300 hover:text-white transition-colors">Impacto</a>
+                <a href="#impacto" className="text-gray-300 hover:text-white transition-colors">Impacto</a>
               </li>
               <li>
-                <a href="#plans" className="text-gray-300 hover:text-white transition-colors">Planes</a>
+                <a href="#planes" className="text-gray-300 hover:text-white transition-colors">Planes</a>
               </li>
               <li>
-                <a href="#how" className="text-gray-300 hover:text-white transition-colors">¿Cómo funciona?</a>
+                <a href="#proceso" className="text-gray-300 hover:text-white transition-colors">¿Cómo funciona?</a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contacto</a>
+                <a href="https://lacantera1.typeform.com/to/f3nr4wss" className="text-gray-300 hover:text-white transition-colors">Contacto</a>
               </li>
             </ul>
           </div>
