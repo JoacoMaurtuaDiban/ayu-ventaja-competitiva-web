@@ -1,6 +1,6 @@
+
 import React, { useRef, useEffect, useState } from 'react';
 import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User } from 'lucide-react';
-import { Button } from "@/components/ui/button";
 
 // Remove the collaboratorBenefits array since we won't need it anymore
 const plans = [
@@ -135,12 +135,12 @@ const PlansSection = () => {
                 ))}
               </div>
               
-              <Button 
+              <button 
                 className="ayu-btn-secondary mt-6"
                 onClick={() => handleCtaClick(plan.name)}
               >
                 Solicitar info P. {plan.name}
-              </Button>
+              </button>
             </div>
           ))}
         </div>

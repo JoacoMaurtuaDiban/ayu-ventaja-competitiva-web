@@ -46,6 +46,10 @@ const ProcessSection = () => {
     };
   }, []);
 
+  const handleCtaClick = () => {
+    window.open('https://lacantera1.typeform.com/to/f3nr4wss', '_blank');
+  };
+
   return (
     <section id="proceso" ref={sectionRef} className="section-padding bg-[#FF3497] relative overflow-hidden">
       {/* Decorative elements with adjusted opacity for the new background */}
@@ -80,7 +84,10 @@ const ProcessSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="px-8 py-3 bg-[#FFE523] text-black font-semibold rounded-full hover:opacity-90 transition-opacity">
+          <button 
+            className="px-8 py-3 bg-[#FFE523] text-black font-semibold rounded-full hover:opacity-90 transition-opacity"
+            onClick={handleCtaClick}
+          >
             Quiero llevar AYU a mi empresa
           </button>
         </div>
