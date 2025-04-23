@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { Check } from 'lucide-react';
+import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User } from 'lucide-react';
 
 const collaboratorBenefits = [
   'Compra progresiva sin deuda',
@@ -44,6 +44,33 @@ const plans = [
     name: 'EMPRESARIAL',
     description: 'Hecho a medida, cocreamos el plan para tu empresa',
     features: []
+  }
+];
+
+const additionalBenefits = [
+  {
+    text: "Reporte mensual con data agregada de los proyectos de colaboradores AYUdados",
+    icon: FileChartColumn
+  },
+  {
+    text: "Medición mensual de engagement con beneficio corporativo AYU",
+    icon: Activity
+  },
+  {
+    text: "Acceso a BBDD con info de comportamiento crediticio de colaboradores AYUdados",
+    icon: Database
+  },
+  {
+    text: "Acceso a dashboard personalizado con la información",
+    icon: LayoutDashboard
+  },
+  {
+    text: "Reportes de impacto para uso en memorias de sostenibilidad",
+    icon: FileText
+  },
+  {
+    text: "Asesores AYU dedicados a colaboradores AYUdados y a la empresa",
+    icon: User
   }
 ];
 
@@ -124,6 +151,36 @@ const PlansSection = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* New Additional Benefits Subsection */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-center mb-8">
+            Además, algunos de nuestros planes incluyen:
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {additionalBenefits.map((benefit, index) => {
+              const IconComponent = benefit.icon;
+              return (
+                <div 
+                  key={index} 
+                  className={`bento-card flex items-center space-x-4 opacity-0 ${
+                    isVisible ? `animate-fade-in-delay-${index % 3}` : ''
+                  }`}
+                >
+                  <p className="flex-1 text-gray-700">{benefit.text}</p>
+                  <div className="flex-shrink-0">
+                    <IconComponent className="h-8 w-8 text-ayu-pink" />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <p className="text-center text-sm text-gray-600 italic mt-8">
+            *Beneficios sujetos al tipo de plan, para más información contáctanos.
+          </p>
         </div>
       </div>
     </section>
