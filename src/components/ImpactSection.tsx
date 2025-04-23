@@ -20,11 +20,7 @@ const stats = [
   },
   {
     icon: <Building className="h-6 w-6 text-ayu-pink" />,
-<<<<<<< HEAD
-    value: <span className="text-white">0</span>,
-=======
-    value: '0',  // Added a white '0' to maintain layout alignment
->>>>>>> af59f98b3c95c6f5f563ce4d8bc16a2a79344444
+    value: '',  // No value needed for proper alignment
     label: 'Con el respaldo de Pacasmayo'
   }
 ];
@@ -85,14 +81,21 @@ const ImpactSection = () => {
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex items-center mb-2">
                 {stat.icon}
               </div>
-              <div className="text-2xl font-bold text-ayu-pink mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
+              <div className="flex flex-col h-full">
+                {stat.value && (
+                  <div className="text-2xl font-bold text-ayu-pink mb-1">{stat.value}</div>
+                )}
+                {!stat.value && (
+                  <div className="mb-1 h-8"></div> {/* Empty space holder with consistent height */}
+                )}
+                <div className="text-sm text-gray-600 mt-auto">{stat.label}</div>
+              </div>
             </div>
           ))}
         </div>
