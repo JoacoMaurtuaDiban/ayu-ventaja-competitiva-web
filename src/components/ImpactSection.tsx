@@ -20,7 +20,7 @@ const stats = [
   },
   {
     icon: <Building className="h-6 w-6 text-ayu-pink" />,
-    value: '',
+    value: <span className="text-white">0</span>,
     label: 'Con el respaldo de Pacasmayo'
   }
 ];
