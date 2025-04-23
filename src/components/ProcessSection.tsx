@@ -1,20 +1,20 @@
 
 import React, { useRef, useEffect, useState } from 'react';
-import { ClipboardList, Wallet, Truck } from 'lucide-react';
+import { Calendar, Wallet, Truck } from 'lucide-react';
 
 const steps = [
   {
-    icon: <ClipboardList className="h-12 w-12 text-white" />,
+    icon: <Calendar className="h-12 w-12 text-[#FF3497]" />,
     title: 'DEFINE',
     description: 'Definir su plan: Tus colaboradores eligen la cuota mensual que se adecue mejor a su bolsillo y el plazo de tiempo en el que deseas conseguirlo.'
   },
   {
-    icon: <Wallet className="h-12 w-12 text-white" />,
+    icon: <Wallet className="h-12 w-12 text-[#FF3497]" />,
     title: 'AHORRA',
     description: 'Ahorrar progresivamente: Tus colaboradores ahorran mensualmente una cantidad cómoda para su economía.'
   },
   {
-    icon: <Truck className="h-12 w-12 text-white" />,
+    icon: <Truck className="h-12 w-12 text-[#FF3497]" />,
     title: 'RECIBE',
     description: 'Recibir materiales directo a la obra: AYU entrega los materiales directamente en la obra cuando son requeridos.'
   }
