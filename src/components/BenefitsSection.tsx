@@ -1,27 +1,27 @@
 
 import React, { useRef, useEffect, useState } from 'react';
-import { TrendingUp, UserCheck, Clock, Trophy } from 'lucide-react';
+import { Leaf, Briefcase, HandHelping, CreditCard, Handshake } from 'lucide-react';
 
 const benefits = [
   {
-    icon: <TrendingUp className="w-10 h-10 text-ayu-pink" />,
-    title: 'Reducción del estrés financiero',
-    description: 'Colaboradores más tranquilos y enfocados en su día a día laboral.'
+    icon: <Leaf className="w-8 h-8 text-ayu-pink" />,
+    description: 'Contribuye a los objetivos de sostenibilidad y programas de RSE de la empresa'
   },
   {
-    icon: <Clock className="w-10 h-10 text-ayu-pink" />,
-    title: 'Disminución del ausentismo laboral',
-    description: 'Mayor productividad y menos interrupciones en la operación.'
+    icon: <Briefcase className="w-8 h-8 text-ayu-pink" />,
+    description: 'Refuerza la propuesta de valor al colaborador con un beneficio tangible y diferenciador'
   },
   {
-    icon: <UserCheck className="w-10 h-10 text-ayu-pink" />,
-    title: 'Aumento en la motivación y compromiso',
-    description: 'Equipos más comprometidos y alineados con los objetivos.'
+    icon: <HandHelping className="w-8 h-8 text-ayu-pink" />,
+    description: 'Atención directa al colaborador desde AYU, sin carga operativa adicional para la empresa'
   },
   {
-    icon: <Trophy className="w-10 h-10 text-ayu-pink" />,
-    title: 'Inversión social con impacto tangible',
-    description: 'Mejora tu reputación corporativa con resultados medibles.'
+    icon: <CreditCard className="w-8 h-8 text-ayu-pink" />,
+    description: 'Método de compra progresiva sin deudas ni intereses, con orientación técnica incluida'
+  },
+  {
+    icon: <Handshake className="w-8 h-8 text-ayu-pink" />,
+    description: 'Ayuda a generar una percepción positiva de la empresa como agente de cambio social'
   }
 ];
 
@@ -63,21 +63,38 @@ const BenefitsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {benefits.map((benefit, index) => (
-            <div 
-              key={index} 
-              className={`bento-card opacity-0 ${
-                isVisible ? `animate-fade-in-delay-${index % 4}` : ''
-              }`}
-            >
-              <div className="mb-4 bg-ayu-pink bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center">
-                {benefit.icon}
+        <div className="max-w-7xl mx-auto">
+          {/* First row - 3 cards */}
+          <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 opacity-0 ${isVisible ? 'animate-fade-in' : ''}`}>
+            {benefits.slice(0, 3).map((benefit, index) => (
+              <div
+                key={index}
+                className="bento-card flex flex-col items-center"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="mb-4 bg-ayu-pink bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center">
+                  {benefit.icon}
+                </div>
+                <p className="text-gray-600 text-center">{benefit.description}</p>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-center">{benefit.title}</h3>
-              <p className="text-gray-600 text-center">{benefit.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Second row - 2 cards centered */}
+          <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 md:w-2/3 mx-auto opacity-0 ${isVisible ? 'animate-fade-in-delay-1' : ''}`}>
+            {benefits.slice(3).map((benefit, index) => (
+              <div
+                key={index + 3}
+                className="bento-card flex flex-col items-center"
+                style={{ animationDelay: `${(index + 3) * 100}ms` }}
+              >
+                <div className="mb-4 bg-ayu-pink bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center">
+                  {benefit.icon}
+                </div>
+                <p className="text-gray-600 text-center">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
