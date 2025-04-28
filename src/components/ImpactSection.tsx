@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Users, CheckSquare, MapPin, Building } from 'lucide-react';
 
@@ -20,11 +19,7 @@ const stats = [
   },
   {
     icon: <Building className="h-6 w-6 text-ayu-pink" />,
-<<<<<<< HEAD
-    value: <span className="text-white">0</span>,
-=======
     value: '',  // No value needed for proper alignment
->>>>>>> ac080022f6f21f677e681c047c28b97f8a0d7300
     label: 'Con el respaldo de Pacasmayo'
   }
 ];
