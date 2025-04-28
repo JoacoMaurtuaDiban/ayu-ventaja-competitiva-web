@@ -20,7 +20,11 @@ const stats = [
   },
   {
     icon: <Building className="h-6 w-6 text-ayu-pink" />,
+<<<<<<< HEAD
     value: <span className="text-white">0</span>,
+=======
+    value: '',  // No value needed for proper alignment
+>>>>>>> ac080022f6f21f677e681c047c28b97f8a0d7300
     label: 'Con el respaldo de Pacasmayo'
   }
 ];
@@ -81,14 +85,21 @@ const ImpactSection = () => {
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex items-center mb-2">
                 {stat.icon}
               </div>
-              <div className="text-2xl font-bold text-ayu-pink mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
+              <div className="flex flex-col h-full">
+                {stat.value && (
+                  <div className="text-2xl font-bold text-ayu-pink mb-1">{stat.value}</div>
+                )}
+                {!stat.value && (
+                  <div className="mb-1 h-8"></div>
+                )}
+                <div className="text-sm text-gray-600 mt-auto">{stat.label}</div>
+              </div>
             </div>
           ))}
         </div>
