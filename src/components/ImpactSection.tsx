@@ -20,11 +20,7 @@ const stats = [
   },
   {
     icon: <Building className="h-6 w-6 text-ayu-pink" />,
-<<<<<<< HEAD
     value: <span className="text-white">0</span>,
-=======
-    value: '0',  // Added a white '0' to maintain layout alignment
->>>>>>> af59f98b3c95c6f5f563ce4d8bc16a2a79344444
     label: 'Con el respaldo de Pacasmayo'
   }
 ];
