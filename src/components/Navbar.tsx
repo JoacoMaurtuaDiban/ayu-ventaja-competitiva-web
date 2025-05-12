@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -22,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   const handleCtaClick = () => {
-    window.open('https://lacantera1.typeform.com/to/f3nr4wss', '_blank');
+    window.open('https://forms.gle/WVWPfYodxZE6Lk6J7', '_blank');
   };
 
   return (

@@ -96,7 +96,7 @@ const PlansSection = () => {
   }, []);
 
   const handleCtaClick = (planName: string) => {
-    window.open('https://lacantera1.typeform.com/to/f3nr4wss', '_blank');
+    window.open('https://forms.gle/WVWPfYodxZE6Lk6J7', '_blank');
   };
 
   return (

@@ -68,7 +68,7 @@ const Footer = () => {
                 <a href="#proceso" className="text-gray-300 hover:text-white transition-colors">¿Cómo funciona?</a>
               </li>
               <li>
-                <a href="https://lacantera1.typeform.com/to/f3nr4wss" className="text-gray-300 hover:text-white transition-colors">Contacto</a>
+                <a href="https://forms.gle/WVWPfYodxZE6Lk6J7" className="text-gray-300 hover:text-white transition-colors">Contacto</a>
               </li>
             </ul>
           </div>
