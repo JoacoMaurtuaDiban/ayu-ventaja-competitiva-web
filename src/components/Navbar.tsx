@@ -83,14 +83,14 @@ const Navbar = () => {
               className="text-white hover:underline font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Cómo funciona
+              ¿Por que AYU?
             </a>
             <a 
-              href="#impacto" 
+              href="#proceso" 
               className="text-white hover:underline font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Impacto
+              Como funciona
             </a>
             <Button 
               className="bg-[#FFE523] text-black hover:bg-[#FFE523]/90 self-start"
