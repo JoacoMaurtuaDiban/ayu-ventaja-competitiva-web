@@ -4,17 +4,17 @@ import { Calendar, Wallet, Truck } from 'lucide-react';
 
 const steps = [
   {
-    icon: <Calendar className="h-12 w-12 text-white" />,
+    icon: <Calendar className="h-12 w-12 text-[#FF3497]" />,
     title: 'DEFINE',
     description: 'Definir su plan: Tus colaboradores eligen la cuota mensual que se adecue mejor a su bolsillo y el plazo de tiempo en el que deseas conseguirlo.'
   },
   {
-    icon: <Wallet className="h-12 w-12 text-white" />,
+    icon: <Wallet className="h-12 w-12 text-[#FF3497]" />,
     title: 'AHORRA',
     description: 'Ahorrar progresivamente: Tus colaboradores ahorran mensualmente una cantidad cómoda para su economía.'
   },
   {
-    icon: <Truck className="h-12 w-12 text-white" />,
+    icon: <Truck className="h-12 w-12 text-[#FF3497]" />,
     title: 'RECIBE',
     description: 'Recibir materiales directo a la obra: AYU entrega los materiales directamente en la obra cuando son requeridos.'
   }
@@ -51,27 +51,34 @@ const ProcessSection = () => {
   };
 
   return (
-    <section id="proceso" ref={sectionRef} className="section-padding bg-white relative overflow-hidden">
+    <section id="proceso" ref={sectionRef} className="section-padding bg-[#FF3497] relative overflow-hidden">
+      {/* Decorative elements with adjusted opacity for the new background */}
+      <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full opacity-5 -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-60 h-60 bg-white rounded-full opacity-5 translate-x-1/3 translate-y-1/3"></div>
+      
       <div className="container mx-auto relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
-            Así funciona AYU
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            Una solución simple, escalable y sin riesgos
           </h2>
+          <p className="text-lg text-white opacity-90">
+            AYU acompaña todo el proceso, desde el ahorro la compra progresiva mes a mes hasta la entrega de materiales, sin deudas ni intereses
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {steps.map((step, index) => (
             <div 
               key={index} 
-              className={`bg-ayu-pink p-6 rounded-2xl text-center opacity-0 ${
+              className={`bento-card text-center opacity-0 ${
                 isVisible ? `animate-fade-in-delay-${index}` : ''
               }`}
             >
               <div className="inline-flex items-center justify-center mb-4">
                 {step.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-ayu-pink">{step.title}</h3>
-              <p className="text-white">{step.description}</p>
+              <h3 className="text-2xl font-bold mb-3 text-[#FF3497]">{step.title}</h3>
+              <p className="text-gray-600">{step.description}</p>
             </div>
           ))}
         </div>

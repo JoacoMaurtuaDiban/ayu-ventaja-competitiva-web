@@ -1,10 +1,11 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import BenefitsSection from '../components/BenefitsSection';
 import PlansSection from '../components/PlansSection';
 import ProcessSection from '../components/ProcessSection';
+import ImpactSection from '../components/ImpactSection';
+import ContactCTA from '../components/ContactCTA';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -15,6 +16,8 @@ const Index = () => {
       <BenefitsSection />
       <PlansSection />
       <ProcessSection />
+      <ImpactSection />
+      <ContactCTA />
       <Footer />
     </div>
   );
