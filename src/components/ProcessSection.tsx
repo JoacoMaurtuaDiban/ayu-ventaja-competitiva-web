@@ -1,6 +1,6 @@
-
 import React, { useRef, useEffect, useState } from 'react';
-import { Calendar, Wallet, Truck } from 'lucide-react';
+import { Calendar, Wallet, Truck, ArrowRight } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const steps = [
   {
@@ -84,12 +84,13 @@ const ProcessSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button 
-            className="px-8 py-3 bg-[#FFE523] text-black font-semibold rounded-full hover:opacity-90 transition-opacity"
+          <Button 
             onClick={handleCtaClick}
+            className="bg-ayu-pink hover:bg-opacity-90 text-white font-medium rounded-full py-6 px-8 text-lg group transition-all duration-300 hover:shadow-lg hover:shadow-ayu-pink/30"
           >
             Quiero llevar AYU a mi empresa
-          </button>
+            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>
