@@ -22,6 +22,16 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Add smooth scrolling behavior to the document
+    document.documentElement.style.scrollBehavior = 'smooth';
+    
+    return () => {
+      // Clean up on unmount
+      document.documentElement.style.scrollBehavior = 'auto';
+    };
+  }, []);
+
   const handleCtaClick = () => {
     window.open('https://forms.gle/WVWPfYodxZE6Lk6J7', '_blank');
   };
@@ -37,8 +47,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6">
           <a href="#beneficios" className="text-white hover:underline font-medium">Beneficios</a>
           <a href="#planes" className="text-white hover:underline font-medium">Planes</a>
+          <a href="#impacto" className="text-white hover:underline font-medium">¿Por qué AYU?</a>
           <a href="#proceso" className="text-white hover:underline font-medium">Cómo funciona</a>
-          <a href="#impacto" className="text-white hover:underline font-medium">Impacto</a>
           <Button 
             className="bg-[#FFE523] text-black hover:bg-[#FFE523]/90"
             onClick={handleCtaClick}
@@ -79,18 +89,18 @@ const Navbar = () => {
               Planes
             </a>
             <a 
-              href="#proceso" 
+              href="#impacto" 
               className="text-white hover:underline font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              ¿Por que AYU?
+              ¿Por qué AYU?
             </a>
             <a 
               href="#proceso" 
               className="text-white hover:underline font-medium py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Como funciona
+              Cómo funciona
             </a>
             <Button 
               className="bg-[#FFE523] text-black hover:bg-[#FFE523]/90 self-start"
