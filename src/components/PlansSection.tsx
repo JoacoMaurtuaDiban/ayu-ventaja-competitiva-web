@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect, useState } from 'react';
 import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -180,9 +181,9 @@ const PlansSection = () => {
         </div>
 
         {/* New AYU Impact Section */}
-        <div className="mt-16 -mx-4 md:-mx-8 lg:-mx-16">
-          <div className="bg-ayu-pink px-4 md:px-8 lg:px-16 py-12 md:py-16">
-            <div className="container mx-auto">
+        <div className="mt-16 w-full -mx-[50vw] relative left-1/2 right-1/2">
+          <div className="bg-ayu-pink w-full py-24">
+            <div className="container mx-auto px-4 md:px-8 lg:px-16">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 {/* Left Block */}
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
@@ -209,8 +210,8 @@ const PlansSection = () => {
 
                 {/* Right Block - Video */}
                 <div className="flex justify-center lg:justify-end">
-                  <div className="w-full max-w-[555px] rounded-2xl overflow-hidden shadow-xl">
-                    <div className="relative" style={{ paddingBottom: '53.69%', height: 0 }}>
+                  <div className="w-full max-w-2xl rounded-2xl overflow-hidden shadow-xl">
+                    <div className="relative w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
                       <iframe
                         src="https://www.youtube.com/embed/s3DDJC0K6M0"
                         title="AYU Impact Video"
