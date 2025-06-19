@@ -51,17 +51,17 @@ const ProcessSection = () => {
   };
 
   return (
-    <section id="proceso" ref={sectionRef} className="section-padding bg-[#FF3497] relative overflow-hidden">
-      {/* Decorative elements with adjusted opacity for the new background */}
-      <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full opacity-5 -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-60 h-60 bg-white rounded-full opacity-5 translate-x-1/3 translate-y-1/3"></div>
+    <section id="proceso" ref={sectionRef} className="section-padding bg-white relative overflow-hidden">
+      {/* Decorative elements with adjusted opacity for the white background */}
+      <div className="absolute top-0 left-0 w-40 h-40 bg-[#FF3497] rounded-full opacity-5 -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-60 h-60 bg-[#FF3497] rounded-full opacity-5 translate-x-1/3 translate-y-1/3"></div>
       
       <div className="container mx-auto relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
             Una solución simple, escalable y sin riesgos
           </h2>
-          <p className="text-lg text-white opacity-90">
+          <p className="text-lg text-black opacity-90">
             AYU acompaña todo el proceso, desde el ahorro la compra progresiva mes a mes hasta la entrega de materiales, sin deudas ni intereses
           </p>
         </div>
@@ -70,7 +70,7 @@ const ProcessSection = () => {
           {steps.map((step, index) => (
             <div 
               key={index} 
-              className={`bento-card text-center opacity-0 ${
+              className={`bento-card border-[1px] border-[#FF3497] text-center opacity-0 ${
                 isVisible ? `animate-fade-in-delay-${index}` : ''
               }`}
             >
