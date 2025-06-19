@@ -83,7 +83,7 @@ const ProcessSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="flex justify-center mt-12">
           <Button 
             onClick={handleCtaClick}
             className="bg-ayu-pink hover:bg-opacity-90 text-white font-medium rounded-full py-6 px-8 text-lg group transition-all duration-300 hover:shadow-lg hover:shadow-ayu-pink/30"

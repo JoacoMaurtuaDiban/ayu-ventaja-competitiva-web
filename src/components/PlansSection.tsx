@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -129,12 +128,14 @@ const PlansSection = () => {
                 ))}
               </div>
               
-              <button 
-                className="ayu-btn-secondary mt-6"
-                onClick={() => handleCtaClick(plan.name)}
-              >
-                Solicitar info P. {plan.name}
-              </button>
+              <div className="flex justify-center mt-6">
+                <button 
+                  className="ayu-btn-secondary"
+                  onClick={() => handleCtaClick(plan.name)}
+                >
+                  Solicitar info P. {plan.name}
+                </button>
+              </div>
             </div>
           ))}
         </div>
@@ -169,7 +170,7 @@ const PlansSection = () => {
           </p>
 
           {/* CTA Button */}
-          <div className="text-center mt-8 mb-8">
+          <div className="flex justify-center mt-8 mb-8">
             <Button 
               onClick={handleMainCtaClick}
               className="bg-ayu-pink hover:bg-opacity-90 text-white font-medium rounded-full py-6 px-8 text-lg group transition-all duration-300 hover:shadow-lg hover:shadow-ayu-pink/30"

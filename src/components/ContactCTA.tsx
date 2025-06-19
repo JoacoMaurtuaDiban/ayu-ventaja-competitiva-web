@@ -16,12 +16,14 @@ const ContactCTA = () => {
         <p className="text-white text-xl mb-8 max-w-3xl mx-auto">
           Descubre cómo implementar este beneficio innovador y generar un impacto positivo en tus colaboradores y en la sociedad
         </p>
-        <Button 
-          onClick={handleCtaClick}
-          className="bg-white text-ayu-pink font-bold text-lg py-4 px-8 rounded-full hover:bg-opacity-90 transition-all shadow-lg"
-        >
-          Solicitar una reunión
-        </Button>
+        <div className="flex justify-center">
+          <Button 
+            onClick={handleCtaClick}
+            className="bg-white text-ayu-pink font-bold text-lg py-4 px-8 rounded-full hover:bg-opacity-90 transition-all shadow-lg"
+          >
+            Solicitar una reunión
+          </Button>
+        </div>
       </div>
     </section>
   );
