@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect, useState } from 'react';
 import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -163,8 +164,12 @@ const PlansSection = () => {
             })}
           </div>
 
+          <p className="text-center text-sm text-gray-600 italic mt-8">
+            *Beneficios sujetos al tipo de plan, para más información contáctanos.
+          </p>
+
           {/* CTA Button */}
-          <div className="text-center mt-10">
+          <div className="text-center mt-8 mb-8">
             <Button 
               onClick={handleMainCtaClick}
               className="bg-ayu-pink hover:bg-opacity-90 text-white font-medium rounded-full py-6 px-8 text-lg group transition-all duration-300 hover:shadow-lg hover:shadow-ayu-pink/30"
@@ -173,10 +178,6 @@ const PlansSection = () => {
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
-
-          <p className="text-center text-sm text-gray-600 italic mt-8 mb-8">
-            *Beneficios sujetos al tipo de plan, para más información contáctanos.
-          </p>
         </div>
       </div>
     </section>
