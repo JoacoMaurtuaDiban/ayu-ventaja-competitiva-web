@@ -3,7 +3,7 @@ import React from 'react';
 
 const AyuImpactSection = () => {
   return (
-    <section className="bg-[#FF3497] py-24 md:py-32 px-0 relative overflow-hidden w-full">
+    <section id="impacto" className="bg-[#FF3497] py-24 md:py-32 px-0 relative overflow-hidden w-full">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full opacity-5 -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-60 h-60 bg-white rounded-full opacity-5 translate-x-1/3 translate-y-1/3"></div>
