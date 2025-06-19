@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -177,6 +176,53 @@ const PlansSection = () => {
               Quiero llevar AYU a mi empresa
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
+          </div>
+        </div>
+
+        {/* New AYU Impact Section */}
+        <div className="mt-16 -mx-4 md:-mx-8 lg:-mx-16">
+          <div className="bg-ayu-pink px-4 md:px-8 lg:px-16 py-12 md:py-16">
+            <div className="container mx-auto">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                {/* Left Block */}
+                <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+                  <div className="w-32 h-auto">
+                    <img 
+                      src="/lovable-uploads/8cfbb4fa-6ebd-43bf-a6b3-5d0b6125621e.png" 
+                      alt="AYU Logo" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  
+                  <h3 className="text-white font-bold text-2xl md:text-3xl leading-tight">
+                    ha transformado la vida de +220 familias
+                  </h3>
+                  
+                  <div className="w-48 h-auto">
+                    <img 
+                      src="/lovable-uploads/9e292847-5aee-4917-a665-fdea3e5cb3c3.png" 
+                      alt="Pacasmayo Logo" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+
+                {/* Right Block - Video */}
+                <div className="flex justify-center lg:justify-end">
+                  <div className="w-full max-w-[555px] rounded-2xl overflow-hidden shadow-xl">
+                    <div className="relative" style={{ paddingBottom: '53.69%', height: 0 }}>
+                      <iframe
+                        src="https://www.youtube.com/embed/s3DDJC0K6M0"
+                        title="AYU Impact Video"
+                        className="absolute top-0 left-0 w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
