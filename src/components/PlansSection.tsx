@@ -174,7 +174,7 @@ const PlansSection = () => {
               onClick={handleMainCtaClick}
               className="bg-ayu-pink hover:bg-opacity-90 text-white font-medium rounded-full py-6 px-8 text-lg group transition-all duration-300 hover:shadow-lg hover:shadow-ayu-pink/30"
             >
-              Quiero llevar AYU a mi empresa
+              Quiero cotizar con un asesor
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
