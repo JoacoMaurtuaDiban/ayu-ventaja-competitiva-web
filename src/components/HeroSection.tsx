@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
@@ -10,7 +9,7 @@ const HeroSection = () => {
 
   return (
     <section 
-      className="relative min-h-[90vh] w-full overflow-hidden bg-white py-16 md:py-24"
+      className="relative min-h-[90vh] w-full overflow-hidden bg-white py-16 md:py-24 pt-24 md:pt-32 lg:pt-16 lg:py-24"
       id="hero"
     >
       <div className="container mx-auto px-4 lg:px-8">
