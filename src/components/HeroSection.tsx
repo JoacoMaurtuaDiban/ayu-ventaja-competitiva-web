@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
@@ -43,7 +44,7 @@ const HeroSection = () => {
               <img 
                 src="/lovable-uploads/55600d8c-fca3-4a80-92a1-abd57616b891.png"
                 alt="AYU Impact"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-bottom"
               />
             </div>
 
