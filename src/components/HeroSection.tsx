@@ -44,7 +44,8 @@ const HeroSection = () => {
               <img 
                 src="/lovable-uploads/55600d8c-fca3-4a80-92a1-abd57616b891.png"
                 alt="AYU Impact"
-                className="w-full h-full object-cover object-bottom"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: 'center 80%' }}
               />
             </div>
 
