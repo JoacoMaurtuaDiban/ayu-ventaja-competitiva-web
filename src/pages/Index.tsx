@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import BenefitsSection from '../components/BenefitsSection';
 import PlansSection from '../components/PlansSection';
+import AyuImpactSection from '../components/AyuImpactSection';
 import ProcessSection from '../components/ProcessSection';
 import Footer from '../components/Footer';
 
@@ -14,6 +15,7 @@ const Index = () => {
       <HeroSection />
       <BenefitsSection />
       <PlansSection />
+      <AyuImpactSection />
       <ProcessSection />
       <Footer />
     </div>
