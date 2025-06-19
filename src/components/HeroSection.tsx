@@ -37,9 +37,19 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Image Gallery - Takes 7 columns on desktop */}
+          {/* Image Section - Takes 7 columns on desktop */}
           <div className="lg:col-span-7">
-            <div className="grid grid-cols-3 gap-4 h-[80vh] max-h-[800px]">
+            {/* Single Image for Mobile/Tablet (hidden on desktop) */}
+            <div className="lg:hidden w-full h-[60vh] max-h-[500px] relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="/lovable-uploads/55600d8c-fca3-4a80-92a1-abd57616b891.png"
+                alt="AYU Impact"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* 3-Image Gallery for Desktop (hidden on mobile/tablet) */}
+            <div className="hidden lg:grid grid-cols-3 gap-4 h-[80vh] max-h-[800px]">
               {/* Main Image - Taller */}
               <div className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
                 <img 
