@@ -36,7 +36,7 @@ const AyuImpactSection = () => {
           {/* Right Block - Video */}
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-xl">
-              <div className="relative w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
+              <div className="relative w-full" style={{ paddingBottom: '65%', height: 0 }}>
                 <iframe
                   src="https://www.youtube.com/embed/s3DDJC0K6M0"
                   title="AYU Impact Video"
