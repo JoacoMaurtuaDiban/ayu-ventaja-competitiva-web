@@ -38,7 +38,7 @@ const AyuImpactSection = () => {
             <div className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-xl">
               <div className="relative w-full" style={{ paddingBottom: '65%', height: 0 }}>
                 <iframe
-                  src="https://www.youtube.com/embed/s3DDJC0K6M0"
+                  src="https://www.youtube.com/watch?v=vSllp8A2TjE"
                   title="AYU Impact Video"
                   className="absolute top-0 left-0 w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
