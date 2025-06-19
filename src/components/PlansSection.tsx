@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Check, FileChartColumn, Activity, Database, LayoutDashboard, FileText, User } from 'lucide-react';
 
@@ -14,17 +13,6 @@ const plans = [
     ]
   },
   {
-    name: 'INTERMEDIO',
-    description: 'Beneficios del programa AYU',
-    features: [
-      'Sorteo mensual de materiales de construcción valorizado en S/ 500 entre pagadores',
-      'Capacitación presencial trimestral personalizada para colaboradores',
-      'Recomendaciones de MO capacitados por CPSAA',
-      '1 visita técnica presencial personalizada adicional'
-    ],
-    highlight: true
-  },
-  {
     name: 'AVANZADO',
     description: 'Beneficios del programa AYU',
     features: [
@@ -33,7 +21,8 @@ const plans = [
       'Recomendaciones de MO capacitados por CPSAA',
       '1 visita técnica presencial personalizada adicional',
       'Ejecutivo de cuenta dedicado'
-    ]
+    ],
+    highlight: true
   },
   {
     name: 'EMPRESARIAL',
@@ -111,11 +100,11 @@ const PlansSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {plans.map((plan, index) => (
             <div 
               key={index} 
-              className={`bento-card h-full flex flex-col ${plan.highlight ? 'bento-card-highlight' : ''} opacity-0 ${
+              className={`bento-card h-full flex flex-col ${plan.highlight ? 'bento-card-highlight shadow-[0_4px_24px_rgba(236,0,140,0.2)]' : ''} opacity-0 ${
                 isVisible ? `animate-fade-in-delay-${index % 3}` : ''
               }`}
             >
