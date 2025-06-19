@@ -22,7 +22,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 animate-fade-in-delay-1">
-              AYU es el beneficio que mejora la vida de tus equipos y fortalece tu marca empleadora
+              Un beneficio corporativo que mejora la calidad de vida a través de ahorro progresivo y asesoría técnica profesional.
             </p>
             
             <div className="pt-4 animate-fade-in-delay-2">
@@ -30,7 +30,7 @@ const HeroSection = () => {
                 onClick={handleCtaClick}
                 className="bg-ayu-pink hover:bg-opacity-90 text-white font-medium rounded-full py-6 px-8 text-lg group transition-all duration-300 hover:shadow-lg hover:shadow-ayu-pink/30"
               >
-                Quiero conocer más de AYU
+                Quiero llevar AYU a mi empresa
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
