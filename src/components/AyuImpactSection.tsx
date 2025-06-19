@@ -3,13 +3,13 @@ import React from 'react';
 
 const AyuImpactSection = () => {
   return (
-    <section className="bg-[#FF3497] py-16 px-0 relative overflow-hidden w-full">
+    <section className="bg-[#FF3497] py-24 md:py-32 px-0 relative overflow-hidden w-full">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full opacity-5 -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-60 h-60 bg-white rounded-full opacity-5 translate-x-1/3 translate-y-1/3"></div>
       
       <div className="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto">
           {/* Left Block */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
             <div className="w-32 h-auto">
@@ -35,7 +35,7 @@ const AyuImpactSection = () => {
 
           {/* Right Block - Video */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-3xl rounded-2xl overflow-hidden shadow-xl">
+            <div className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-xl">
               <div className="relative w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
                 <iframe
                   src="https://www.youtube.com/embed/s3DDJC0K6M0"
