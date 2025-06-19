@@ -56,16 +56,16 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Enlaces</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#beneficios" className="text-gray-300 hover:text-white transition-colors">¿Por qué AYU?</a>
-              </li>
-              <li>
-                <a href="#impacto" className="text-gray-300 hover:text-white transition-colors">Impacto</a>
+                <a href="#beneficios" className="text-gray-300 hover:text-white transition-colors">Beneficios</a>
               </li>
               <li>
                 <a href="#planes" className="text-gray-300 hover:text-white transition-colors">Planes</a>
               </li>
               <li>
-                <a href="#proceso" className="text-gray-300 hover:text-white transition-colors">¿Cómo funciona?</a>
+                <a href="#impacto" className="text-gray-300 hover:text-white transition-colors">¿Por qué AYU?</a>
+              </li>
+              <li>
+                <a href="#proceso" className="text-gray-300 hover:text-white transition-colors">Cómo funciona</a>
               </li>
               <li>
                 <a href="https://forms.gle/WVWPfYodxZE6Lk6J7" className="text-gray-300 hover:text-white transition-colors">Contacto</a>
